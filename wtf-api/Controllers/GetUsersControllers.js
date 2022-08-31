@@ -2,7 +2,7 @@ const UsersModel = require("../Models/UserModel");
 
 const GetUsers = async (req, res) => {
   const query = req.query;
-  console.log(query);
+  // console.log(query);
 
   const users = await UsersModel.find({ query });
   if (users) {
